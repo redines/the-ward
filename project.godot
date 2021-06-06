@@ -8,10 +8,26 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node",
+"class": "PlayerInput",
+"language": "GDScript",
+"path": "res://Player/PlayerInput.gd"
+} ]
+_global_script_class_icons={
+"PlayerInput": ""
+}
+
 [application]
 
 config/name="theWard"
-config/icon="res://icon.png"
+run/main_scene="res://Main.tscn"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+window/size/resizable=false
 
 [physics]
 
