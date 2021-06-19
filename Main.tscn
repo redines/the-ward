@@ -1,14 +1,22 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/539c483ff16585f1014ce8bff226bc56.png" type="Texture" id=2]
+[ext_resource path="res://Dialog/Dialog.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Characters/NPC/NPC.tscn" type="PackedScene" id=4]
 
 [node name="Main" type="Node"]
 
-[node name="Sprite2" type="Sprite" parent="."]
+[node name="Backgrund" type="Sprite" parent="."]
 position = Vector2( 642.5, 360 )
 scale = Vector2( 1.83286, 1.77833 )
 texture = ExtResource( 2 )
 
+[node name="npx" parent="." instance=ExtResource( 4 )]
+position = Vector2( 858.249, 390.36 )
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 644.548, 351.761 )
+position = Vector2( 681.852, 389.859 )
+
+[node name="Dialog" parent="." instance=ExtResource( 3 )]
+position = Vector2( 37.0414, 17.9594 )
