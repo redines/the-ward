@@ -1,10 +1,7 @@
 extends Area2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var can_interact = false
+export var timeLine = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -12,9 +9,9 @@ func _ready():
 	connect("body_exited", self, '_on_NPC_body_exited')
 
 func _input(event):
-	if get_node_or_null('DialogNode') == null:
+	if get_node_or_null('DialogNode') == null and timeLine != "":
 		if event.is_action_pressed("ui_accept") and can_interact:
-			var dialog = Dialogic.start('first')
+			var dialog = Dialogic.start(timeLine)
 			dialog.connect('first', self, 'unpause')
 			add_child(dialog)
 			
