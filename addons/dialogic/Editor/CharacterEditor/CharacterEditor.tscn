@@ -8,7 +8,7 @@ content_margin_left = 5.0
 content_margin_right = 5.0
 content_margin_top = 5.0
 content_margin_bottom = 5.0
-bg_color = Color( 0, 0, 0, 1 )
+bg_color = Color( 0.2, 0.23, 0.31, 1 )
 
 [sub_resource type="Image" id=4]
 data = {
@@ -262,7 +262,6 @@ margin_left = 134.0
 margin_right = 523.0
 margin_bottom = 24.0
 rect_min_size = Vector2( 140, 0 )
-focus_mode = 0
 size_flags_horizontal = 3
 editable = false
 

@@ -5,8 +5,8 @@
 [node name="Dialog" type="Node2D"]
 
 [node name="DialogNode" parent="." instance=ExtResource( 1 )]
-margin_left = 645.099
-margin_top = 733.807
-margin_right = 645.099
-margin_bottom = 733.807
+margin_left = 655.802
+margin_top = 470.992
+margin_right = 655.802
+margin_bottom = 470.992
 timeline = "timeline-1624096124.json"

@@ -8,19 +8,15 @@
 [node name="Main" type="Node"]
 
 [node name="Backgrund" type="Sprite" parent="."]
-position = Vector2( 642.5, 360 )
+position = Vector2( 643.559, 359.47 )
 scale = Vector2( 1.83286, 1.77833 )
 texture = ExtResource( 2 )
 
-[node name="NPC2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 790.326, 307.674 )
-
 [node name="NPC" parent="." instance=ExtResource( 4 )]
-position = Vector2( 847.273, 388.239 )
-timeLine = "first"
+position = Vector2( 771.294, 400.65 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 681.852, 389.859 )
+position = Vector2( 582.962, 401.886 )
 
 [node name="wall_left" parent="." instance=ExtResource( 3 )]
 position = Vector2( 27.1535, 364.76 )

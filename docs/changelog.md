@@ -1,3 +1,48 @@
+## v1.2.5 - Possibly breaking eveything. We will never know.
+- Loading timeline events on batches to speedup big timelines
+- Reduced the amount of nodes inside events to improve loading times
+- Fixing the "first time running" bug where you had to reboot dialogic after enabling it for the first time
+- Fixing a bug where if you had a node selected in the editor you couldn't open any resource picker
+- Fixed a bug when trying to add a new resource after removing one
+- Fixed the issue that allowed you to keep loading messages after a dialog close event
+- Enabling bbcode to glossary entries
+- Simplified some internal code
+- Adding new setting to the Set Background event to add fade-in time
+- Fixed an issue that caused nested timelines to be deleted whem moving directories [[zaknafean]](https://github.com/zaknafean)
+- Settings Editor
+  - Added a default action key selector so you don't have to set it per theme. The theme action key settings will overwrite the one set in settings. 
+  - Added new setting to select Dialogic's Canvas Layer [[RedXGames]](https://github.com/RedXGames)
+
+## v1.2.4 - Gotta go fast
+- Fixed an issue with the default scale of the portraits
+- Trying to simplify and remove legacy code:
+  - EditorView.gd
+    - Unified the remove resource confirmation dialogs
+    - Removed pointless variable definitions
+
+## v1.2.3 - Two releases in one day?
+- Hopefully, final attempt to fix the weird event creation bug [[Jowan-Spooner](https://github.com/Jowan-Spooner)] Thanks [[Drawsi](https://github.com/Drawsi)] for the report and testing!
+
+## v1.2.2 - Here we go again :')
+- Set Value Event: There is now a dice symbol that (when toggled) will reveal to boxes for a minimum and a maximum random number to choose from [[Jowan-Spooner](https://github.com/Jowan-Spooner)]
+- Making a small delay on choices to prevent the people that spam "next" to accidentally select the first option
+- Fixed some issues when creating new events in the timeline
+
+## v1.2.1 - Get them while they're hot!
+- You can now specify for how long to wait in `[nw]` events. `[nw=3]` or whatever number of seconds you want it to wait
+- Fixed some issues with the CanvasLayer
+- Fixed some issues when creating dialogs using GDScript
+- Fixed an issue when changing the current timeline
+- Improved the internals of `MasterTree.gd` [[Jowan-Spooner](https://github.com/Jowan-Spooner)]
+- Fixed some issues with the `[nw]` command [[Jowan-Spooner](https://github.com/Jowan-Spooner)]
+- Improved the Timeline Editor performance when loading timelines
+- Removed the `focus_mode` warning
+- Added a new page to the docs about the [Text Events](https://github.com/coppolaemilio/dialogic/blob/main/docs/events/TextEvent.md)
+- Fixed a bug when trying to skip fade-in dialog animations [[idontkillcoyotes](https://github.com/idontkillcoyotes)]
+- Fixed an issue with typing sounds in exported projects
+- Fixed an issue when selecting folders for typing sounds in exporting projects; Thank you [AnidemDex](https://github.com/AnidemDex)!
+
+
 ## v1.2 - Organize it!
 - Functionality
   - Added extra options to allow the user to disable/enable saving of definitions and current timeline [[Arnaud](https://github.com/arnaudvergnet)]
