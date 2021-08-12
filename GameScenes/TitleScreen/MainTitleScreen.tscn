@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://UI/Buttons/ContinueButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://UI/Buttons/NewGameButton.tscn" type="PackedScene" id=2]
@@ -6,7 +6,6 @@
 [ext_resource path="res://GameScenes/SceneTransistions/FadeIn.tscn" type="PackedScene" id=4]
 [ext_resource path="res://GameScenes/TitleScreen/MainTitleScreen.gd" type="Script" id=5]
 [ext_resource path="res://GameScenes/LevelScenes/Main.tscn" type="PackedScene" id=6]
-[ext_resource path="res://UI/Buttons/MenuButton.gd" type="Script" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 48
@@ -51,7 +50,6 @@ alignment = 1
 margin_top = 168.0
 margin_bottom = 228.0
 custom_fonts/font = SubResource( 1 )
-script = ExtResource( 7 )
 target_scene = ExtResource( 6 )
 
 [node name="ContinueButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 1 )]

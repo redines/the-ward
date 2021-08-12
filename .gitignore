@@ -16,6 +16,6 @@ export_presets.cfg
 /addons/*
 !/addons/dialogic
 # Ignore dialogic resources
-/dialogic
+#/dialogic
 # Place test project files here
 /test-project
