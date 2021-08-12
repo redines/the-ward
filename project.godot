@@ -42,7 +42,12 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "PlayerInput",
 "language": "GDScript",
-"path": "res://Player/PlayerInput.gd"
+"path": "res://Characters/Player/PlayerInput.gd"
+}, {
+"base": "CanvasLayer",
+"class": "scenechange",
+"language": "GDScript",
+"path": "res://SceneHandler/SceneChanger.gd"
 } ]
 _global_script_class_icons={
 "Dialogic": "",
@@ -51,13 +56,14 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "InteractionManager": "",
-"PlayerInput": ""
+"PlayerInput": "",
+"scenechange": ""
 }
 
 [application]
 
 config/name="theWard"
-run/main_scene="res://Main.tscn"
+run/main_scene="res://GameScenes/TitleScreen/MainTitleScreen.tscn"
 
 [autoload]
 
@@ -83,6 +89,8 @@ Interact={
 
 [layer_names]
 
+2d_physics/layer_1="Player"
+2d_physics/layer_2="Door"
 2d_physics/layer_20="Interaction"
 
 [physics]

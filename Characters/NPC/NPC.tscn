@@ -10,7 +10,7 @@ extents = Vector2( 6.54288, 13.0764 )
 [sub_resource type="GDScript" id=2]
 script/source = "extends InteractionManager
 
-export var timeLine = [\"time1\", \"time2\"]
+export var timeLine = \"\"
 
 func receive_interaction() -> void:
 	if get_node_or_null('DialogNode') == null and timeLine != \"\":
@@ -42,3 +42,4 @@ shape = SubResource( 1 )
 [node name="InteractionArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 0.110222, -0.589737 )
 script = SubResource( 2 )
+timeLine = "first"

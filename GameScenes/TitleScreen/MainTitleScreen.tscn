@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://UI/Buttons/ContinueButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://UI/Buttons/NewGameButton.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI/Buttons/OptionsButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://GameScenes/SceneTransistions/FadeIn.tscn" type="PackedScene" id=4]
+[ext_resource path="res://GameScenes/TitleScreen/MainTitleScreen.gd" type="Script" id=5]
+[ext_resource path="res://GameScenes/LevelScenes/Main.tscn" type="PackedScene" id=6]
+[ext_resource path="res://UI/Buttons/MenuButton.gd" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+size = 48
+outline_color = Color( 0.262745, 0.168627, 0.168627, 1 )
+
+[node name="TitleScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 80.0
+margin_right = 1160.0
+margin_bottom = 640.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Logo" type="TextureRect" parent="Menu"]
+margin_right = 1040.0
+stretch_mode = 4
+
+[node name="CenterRow" type="HBoxContainer" parent="Menu"]
+margin_top = 4.0
+margin_right = 1040.0
+margin_bottom = 560.0
+size_flags_vertical = 3
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
+margin_right = 1040.0
+margin_bottom = 556.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 20
+alignment = 1
+
+[node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 2 )]
+margin_top = 168.0
+margin_bottom = 228.0
+custom_fonts/font = SubResource( 1 )
+script = ExtResource( 7 )
+target_scene = ExtResource( 6 )
+
+[node name="ContinueButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 1 )]
+margin_top = 248.0
+margin_bottom = 308.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="OptionsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
+margin_top = 328.0
+margin_bottom = 388.0
+custom_fonts/font = SubResource( 1 )
+
+[node name="FadeIn" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[connection signal="pressed" from="Menu/CenterRow/Buttons/NewGameButton" to="Menu/CenterRow/Buttons/NewGameButton" method="_on_NewGameButton_pressed"]
+[connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
