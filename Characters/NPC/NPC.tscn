@@ -23,6 +23,9 @@ func receive_interaction() -> void:
 
 func unpause(timeLine):
 	get_tree().paused = false
+
+
+	
 "
 
 [node name="NPC" type="KinematicBody2D"]

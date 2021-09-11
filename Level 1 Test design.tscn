@@ -1,8 +1,9 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Characters/Player/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Characters/Player/539c483ff16585f1014ce8bff226bc56.png" type="Texture" id=2]
+[ext_resource path="res://Assets/539c483ff16585f1014ce8bff226bc56.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Sprites/TileSets/tiles_packed.png" type="Texture" id=3]
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "tiles_packed.png 0"

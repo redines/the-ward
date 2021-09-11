@@ -39,10 +39,10 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Characters/InteractionManager/InteractionManager.gd"
 }, {
-"base": "Node",
-"class": "PlayerInput",
+"base": "Resource",
+"class": "ItemResource",
 "language": "GDScript",
-"path": "res://Characters/Player/PlayerInput.gd"
+"path": "res://GameScenes/Items/Item.gd"
 }, {
 "base": "CanvasLayer",
 "class": "scenechange",
@@ -56,7 +56,7 @@ _global_script_class_icons={
 "DialogicResources": "",
 "DialogicUtil": "",
 "InteractionManager": "",
-"PlayerInput": "",
+"ItemResource": "",
 "scenechange": ""
 }
 
@@ -68,6 +68,7 @@ run/main_scene="res://GameScenes/TitleScreen/MainTitleScreen.tscn"
 [autoload]
 
 DialogicSingleton="*res://addons/dialogic/Other/DialogicSingleton.gd"
+ItemDatabase="*res://GameScenes/Items/ItemDatabase.gd"
 
 [display]
 
